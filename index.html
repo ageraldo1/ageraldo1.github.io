@@ -1,93 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-    <title>Document</title>
+    <meta name="description"
+        content="Alexandre Geraldo - AWS Cloud, Networking & Troubleshooting Specialist. Helping businesses design, secure, and troubleshoot AWS environments.">
+    <title>Alexandre Geraldo | AWS Cloud Specialist</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5e5214537e.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-  <table class="table table-striped">
-    <thead class="thead-dark">
-      <tr>
-        <th colspan="4" scope="col"><center>Regional Sales Q1</center></th>
-      </tr>
-      <tr>
-        <th>Region</th>
-        <th>Sales Person</th>
-        <th>Amount</th>
-        <th>Total</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>North-West</td>
-        <td>Tim</td>
-        <td>$3,000</td>
-        <td>$24,700</td>
-      </tr>
-      <tr>
-        <td>South-East</td>
-        <td>Ashley</td>
-        <td>$1,500</td>
-      </tr>
-      <tr>
-        <td>South-West</td>
-        <td>Jeff</td>
-        <td>$1,000</td>
-      </tr>
-      <tr>
-        <td>North-West</td>
-        <td>Sarah</td>
-        <td>$4,000</td>
-      </tr>
-      <tr>
-        <td>North-East</td>
-        <td>Alex</td>
-        <td>$2,000</td>
-      </tr>
-      <tr>
-        <td>North-East</td>
-        <td>Kevin</td>
-        <td>$5,000</td>
-      </tr>
-      <tr>
-        <td>South-East</td>
-        <td>Patricia</td>
-        <td>$6,300</td>
-      </tr>
-      <tr>
-        <td>South-West</td>
-        <td>Arnold</td>
-        <td>$200</td>
-      </tr>
-      <tr>
-        <td>North-West</td>
-        <td>Lindsay</td>
-        <td>$800</td>
-      </tr>
-    </tbody>
-    <tfoot>
-      <tr>
-        <td colspan="4">Q1 Employee Sales By Region</td>
-      </tr>
-    </tfoot>
-  </table>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <nav>
+        <div class="container nav-content">
+            <a href="#" class="logo">AG</a>
+            <ul class="nav-links">
+                <li><a href="#about" data-i18n="nav_about">About</a></li>
+                <li><a href="#services" data-i18n="nav_services">Services</a></li>
+                <li><a href="#experience" data-i18n="nav_experience">Experience</a></li>
+                <li><a href="#packages" data-i18n="nav_packages">Packages</a></li>
+                <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+                <li class="lang-switch">
+                    <button class="lang-btn active" onclick="changeLanguage('en')">EN</button>
+                    <button class="lang-btn" onclick="changeLanguage('pt')">PT</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container hero-content">
+                <span class="hero-subtitle" data-i18n="hero_subtitle">Hi, my name is</span>
+                <h1 data-i18n="hero_title">Alexandre Geraldo.</h1>
+                <h2 data-i18n="hero_role">AWS Cloud, Networking & Troubleshooting Specialist.</h2>
+                <p data-i18n="hero_desc1">Helping businesses design, secure, and troubleshoot AWS environments — fast
+                    and reliably.</p>
+                <p data-i18n="hero_desc2">With over 20 years of experience in enterprise infrastructure and cloud
+                    platforms, I specialize in AWS networking, security, and complex troubleshooting scenarios.</p>
+                <a href="#contact" class="btn" data-i18n="hero_cta">Get In Touch</a>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services">
+            <div class="container">
+                <h3 class="section-title" data-i18n="services_title">What I Help With</h3>
+                <div class="grid-3">
+                    <div class="card">
+                        <i class="fas fa-network-wired fa-2x"
+                            style="color: var(--accent-color); margin-bottom: 20px;"></i>
+                        <h3 data-i18n="srv_net_title">AWS Networking & Security</h3>
+                        <ul>
+                            <li data-i18n="srv_net_1">VPC architecture</li>
+                            <li data-i18n="srv_net_2">AWS WAF, Shield, Firewall Manager, and Network Firewall</li>
+                            <li data-i18n="srv_net_3">Route 53, load balancers, and traffic routing issues</li>
+                            <li data-i18n="srv_net_4">Security reviews and best-practice assessments</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-tools fa-2x" style="color: var(--accent-color); margin-bottom: 20px;"></i>
+                        <h3 data-i18n="srv_tshoot_title">Cloud Troubleshooting</h3>
+                        <ul>
+                            <li data-i18n="srv_tshoot_1">Production outages and performance degradation</li>
+                            <li data-i18n="srv_tshoot_2">Networking latency, routing, and connectivity problems</li>
+                            <li data-i18n="srv_tshoot_3">Load balancer, DNS, and firewall misconfigurations</li>
+                            <li data-i18n="srv_tshoot_4">Emergency and short-term support engagements</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-brain fa-2x" style="color: var(--accent-color); margin-bottom: 20px;"></i>
+                        <h3 data-i18n="srv_ai_title">AI & Data-Driven Solutions</h3>
+                        <ul>
+                            <li data-i18n="srv_ai_1">Python-based data analysis and automation</li>
+                            <li data-i18n="srv_ai_2">Machine learning models for forecasting and anomaly detection</li>
+                            <li data-i18n="srv_ai_3">AI-assisted monitoring and performance analysis</li>
+                            <li data-i18n="srv_ai_4">Experience with Scikit-learn, Pandas</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience">
+            <div class="container">
+                <h3 class="section-title" data-i18n="exp_title">Selected Projects</h3>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <p class="project-meta" data-i18n="exp_1_meta">FinTech / AI / Cloud</p>
+                        <h3 data-i18n="exp_1_title">AI-Based Duplicate Payment & Fraud Detection Platform</h3>
+                        <p data-i18n="exp_1_p1"><strong>Problem:</strong> Large ERP systems process high volumes of
+                            financial transactions, making them vulnerable to duplicate payments and fraud. Existing
+                            reactive controls led to false positives and delayed detection.</p>
+                        <p data-i18n="exp_1_s1"><strong>Solution:</strong> Designed an AI-driven detection platform
+                            using Python and supervised machine learning models (Random Forest, SVC). Analyzed
+                            historical data to proactively identify high-risk transactions.</p>
+                        <p data-i18n="exp_1_i1"><strong>Impact:</strong> Proactively identified performance degradation.
+                            Improved user experience. Achieved ~20% more accurate performance predictions.</p>
+                        <div class="tech-stack">
+                            <span>Python</span>
+                            <span>Scikit-learn</span>
+                            <span>AWS Lambda</span>
+                            <span>SageMaker</span>
+                            <span>CloudWatch</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <p class="project-meta" data-i18n="exp_2_meta">AIOps / Observability</p>
+                        <h3 data-i18n="exp_2_title">AI-Driven Operations & Observability</h3>
+                        <p data-i18n="exp_2_desc">Applying AIOps principles to improve system reliability. Combining
+                            monitoring data, logs, and historical trends with ML models to move from reactive to
+                            predictive operations.</p>
+                        <ul>
+                            <li data-i18n="exp_2_l1">Anomaly detection on performance, traffic, and financial metrics
+                            </li>
+                            <li data-i18n="exp_2_l2">Noise reduction and alert correlation</li>
+                            <li data-i18n="exp_2_l3">Root cause analysis support</li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span>ARIMA</span>
+                            <span>Prometheus</span>
+                            <span>ELK</span>
+                            <span>Grafana</span>
+                            <span>EventBridge</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Use packages from markdown -->
+        <section id="packages">
+            <div class="container">
+                <h3 class="section-title" data-i18n="pkg_title">Freelance Service Packages</h3>
+                <div class="grid-2">
+                    <div class="card">
+                        <h3 data-i18n="pkg_1_title">AWS Incident Recovery & Troubleshooting</h3>
+                        <p style="color: var(--accent-color);" data-i18n="pkg_1_best">Best for: Production outages,
+                            degraded performance, urgent issues</p>
+                        <ul>
+                            <li data-i18n="pkg_1_l1">Rapid root cause analysis across AWS networking & security</li>
+                            <li data-i18n="pkg_1_l2">VPC, load balancer, DNS, and firewall troubleshooting</li>
+                            <li data-i18n="pkg_1_l3">Clear remediation steps and recommendations</li>
+                        </ul>
+                        <p class="project-meta" style="margin-top: 20px;" data-i18n="pkg_1_eng">Engagement: Hourly or
+                            short-term fixed scope</p>
+                    </div>
+                    <div class="card">
+                        <h3 data-i18n="pkg_2_title">AIOps Monitoring Pilot (30 Days)</h3>
+                        <p style="color: var(--accent-color);" data-i18n="pkg_2_best">Best for: Teams overwhelmed by
+                            alerts or recurring incidents</p>
+                        <ul>
+                            <li data-i18n="pkg_2_l1">Monitoring and alert review</li>
+                            <li data-i18n="pkg_2_l2">Anomaly detection on key metrics</li>
+                            <li data-i18n="pkg_2_l3">Performance and capacity forecasting</li>
+                            <li data-i18n="pkg_2_l4">Actionable dashboards and alerts</li>
+                        </ul>
+                        <p class="project-meta" style="margin-top: 20px;" data-i18n="pkg_2_out">Outcome: Reduced alert
+                            noise & proactive visibility</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About / Skills -->
+        <section id="about">
+            <div class="container">
+                <h3 class="section-title" data-i18n="about_title">About & Skills</h3>
+                <div class="grid-2">
+                    <div>
+                        <p data-i18n="about_p1">I am a senior cloud engineer with a strong background in infrastructure,
+                            DevOps, and data science. My career spans enterprise IT, startups, and cloud-native
+                            environments. I enjoy solving complex technical problems and helping teams stabilize and
+                            scale their systems.</p>
+                        <p data-i18n="about_p2">Master's in Business Analytics from Trine University (exp 2026),
+                            Bachelor of Computer Science from Georgia State University.</p>
+                    </div>
+                    <div>
+                        <h4 data-i18n="skills_title">Technical Skills</h4>
+                        <div class="skill-list">
+                            <div class="skill-item">AWS VPC, WAF, Shield</div>
+                            <div class="skill-item">Route 53, Load Balancers</div>
+                            <div class="skill-item">Docker, Kubernetes</div>
+                            <div class="skill-item">Terraform, Ansible</div>
+                            <div class="skill-item">Python, SQL, Pandas</div>
+                            <div class="skill-item">Scikit-learn, Flask</div>
+                            <div class="skill-item">CloudWatch, Prometheus</div>
+                            <div class="skill-item">Grafana, ELK</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="margin-top: 50px;">
+                    <h4 data-i18n="testimonials_title">Client Feedback</h4>
+                    <blockquote
+                        style="border-left: 2px solid var(--accent-color); padding-left: 20px; font-style: italic;"
+                        data-i18n="testimonial_quote">
+                        "Alexandre has an exceptional ability to understand complex systems quickly and provide clear,
+                        effective solutions. His work helped us stabilize critical systems and prevent recurring
+                        issues."
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="contact" class="footer">
+        <div class="container">
+            <h2 style="margin-bottom: 20px;" data-i18n="contact_title">Get In Touch</h2>
+            <p data-i18n="contact_desc">I am available for short-term troubleshooting, project-based AWS architecture
+                work, and ongoing cloud support.</p>
+            <a href="mailto:alexandre_geraldo@hotmail.com" class="btn" style="margin-bottom: 40px;"
+                data-i18n="contact_btn">Say Hello</a>
+
+            <div class="social-links">
+                <a href="https://github.com/ageraldo1" target="_blank" aria-label="GitHub"><i
+                        class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/alexandre-geraldo-36867811" target="_blank"
+                    aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            </div>
+
+            <p class="copyright" data-i18n="footer_copy">&copy; 2025 Alexandre Geraldo. Built for performance.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 
-    
 </html>
